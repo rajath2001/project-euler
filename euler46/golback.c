@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+#define MAX 1000000
 
 int check_prime(long long int number)
 	{
@@ -19,10 +20,10 @@ int check_prime(long long int number)
 
 int main()
 	{
-		long long int prime[1000000];
+		long long int prime[MAX];
 		long long int count=-1;
 
-		for(long long int odd_number=3;odd_number<800000;odd_number+=2)
+		for(long long int odd_number=3;odd_number<MAX;odd_number+=2)
 				{
 					if(check_prime(odd_number)==1)
 							{
